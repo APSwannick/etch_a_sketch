@@ -1,0 +1,87 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  background: #0FA3B1;
+  color: #050B1A;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Shojumaru', cursive;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.row {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.canvas_row {
+  display: table-row;
+}
+
+.canvas_cell {
+  border-style: dotted;
+  border-width: .01rem;
+  border-color: 629FCC;
+  display: table-cell;
+}
+
+#canvas {
+  background-color: white;
+  max-height: 20rem;
+  min-height: 70%;
+  display: table;
+  width: 100%;
+}
+
+.input {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  vertical-align: middle;
+  background-color: #D9E5D6;
+  margin-left: .2rem;
+  margin-right: .2rem;
+}
+
+span.input {
+  padding-bottom: .2rem;
+  padding-top: .2rem;
+}
+
+.input[type=button] {
+  background-color: #D9E5D6;
+}
+
+.input[type=range] {
+  opacity: .8;
+  height: 1.1rem;
+  -webkit-appearance: none;
+  background: #0FA3B1;
+}
+
+.input[type=range]:hover {
+  opacity: 1;
+}
+
+.input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #FF9B42;
+}
+
+.input[type=range]::-moz-range-thumb {
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #FF9B42;
+}
