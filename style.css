@@ -1,7 +1,7 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
-  background: #0FA3B1;
+  background: #eb0e0e;
   color: #050B1A;
 }
 
@@ -20,7 +20,7 @@ h3 {
   width: 100%;
   max-width: 30rem;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: .5rem;
   text-align: center;
 }
 
@@ -41,47 +41,38 @@ h3 {
   min-height: 70%;
   display: table;
   width: 100%;
+  box-shadow: .5rem .5rem 1rem black, -.5rem -.5rem 1rem black;
 }
 
 .input {
   font-size: 1.1rem;
   line-height: 1.1rem;
   vertical-align: middle;
-  background-color: #D9E5D6;
   margin-left: .2rem;
   margin-right: .2rem;
 }
 
-span.input {
+div.input {
   padding-bottom: .2rem;
   padding-top: .2rem;
+  display: inline-block;
 }
 
 .input[type=button] {
-  background-color: #D9E5D6;
+  background-color: #f0eef1;
+  border-radius: 50%;
+  font-size: .9rem;
+  line-height: 4rem;
+  width: 4rem;
 }
 
 .input[type=range] {
   opacity: .8;
   height: 1.1rem;
-  -webkit-appearance: none;
-  background: #0FA3B1;
+  background: #f0eef1;
+  width: 5rem;
 }
 
 .input[type=range]:hover {
   opacity: 1;
-}
-
-.input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 1.1rem;
-  height: 1.1rem;
-  background: #FF9B42;
-}
-
-.input[type=range]::-moz-range-thumb {
-  width: 1.1rem;
-  height: 1.1rem;
-  background: #FF9B42;
 }
