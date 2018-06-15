@@ -1,6 +1,6 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   background: #eb0e0e;
   color: #050B1A;
 }
@@ -9,11 +9,7 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Shojumaru', cursive;
-}
-
-h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
+  color: #d1a83e;
 }
 
 .row {
@@ -30,26 +26,9 @@ h3 {
 
 .canvas_cell {
   border-style: dotted;
-  border-width: .01rem;
-  border-color: 629FCC;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .1);
   display: table-cell;
-}
-
-#canvas {
-  background-color: white;
-  max-height: 20rem;
-  min-height: 70%;
-  display: table;
-  width: 100%;
-  box-shadow: .5rem .5rem 1rem black, -.5rem -.5rem 1rem black;
-}
-
-.input {
-  font-size: 1.1rem;
-  line-height: 1.1rem;
-  vertical-align: middle;
-  margin-left: .2rem;
-  margin-right: .2rem;
 }
 
 div.input {
@@ -58,21 +37,86 @@ div.input {
   display: inline-block;
 }
 
-.input[type=button] {
-  background-color: #f0eef1;
-  border-radius: 50%;
-  font-size: .9rem;
-  line-height: 4rem;
-  width: 4rem;
+.input {
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  vertical-align: middle;
+  margin-left: .2rem;
+  margin-right: .2rem;
+  height: 4rem;
+  text-align: center;
+  align-content: center;
 }
 
-.input[type=range] {
-  opacity: .8;
+.button {
+  background-color: #edecf2;
+  border-radius: 50%;
+  outline: none;
+  font-size: .9rem;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: inset 0 0 .6rem rgba(0, 0, 0, .9);
+  transition-duration: .15s;
+}
+
+.button:active {
+  transform: rotate(30deg);
+}
+
+.range {
+  opacity: .75;
   height: 1.1rem;
-  background: #f0eef1;
   width: 5rem;
 }
 
-.input[type=range]:hover {
+.fieldset {
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.range:hover {
   opacity: 1;
+}
+
+.web_app {
+  max-height: 20rem;
+  min-height: 70%;
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, .4);
+}
+
+#canvas {
+  display: table;
+  background: white;
+}
+
+.shake {
+  -webkit-animation: mymove .5s;
+  animation: shake .5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(odeg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(-15deg);
+  }
+  80% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
