@@ -46,7 +46,7 @@ function draw_canvas(gridsize) {
 function On_Delay_Remove_Shake(elem) {
   setTimeout(function () {
     elem.className = elem.className.replace(' shake', '');
-  }, 500);
+  }, 1000);
 }
 
 
